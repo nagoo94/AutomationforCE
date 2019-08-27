@@ -35,7 +35,7 @@ public class CECrossbrowserTesting {
             driver = new FirefoxDriver();
         }
 
-        else if (browser.equals("FireFox"))
+        else if (browser.equals("Safari"))
         {
             driver = new SafariDriver();
         }
