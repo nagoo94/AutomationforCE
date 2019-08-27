@@ -6,7 +6,7 @@
 
     <test name="LinkedIn Test">
 
-        <parameter name="browser" value="chrome"/>
+        <parameter name="browser" value="FireFox"/>
 
         <classes>
 

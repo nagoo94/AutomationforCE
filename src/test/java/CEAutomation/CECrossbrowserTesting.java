@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
@@ -30,8 +31,13 @@ public class CECrossbrowserTesting {
         }
         else if (browser.equals("FireFox"))
         {
-            System.setProperty("driver.gecko.driver","geckodriver-v0.21.0-win64/geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver","geckodriver-v0.21.0-win64/geckodriver.exe");
             driver = new FirefoxDriver();
+        }
+
+        else if (browser.equals("FireFox"))
+        {
+            driver = new SafariDriver();
         }
 
         driver.manage().window().maximize();
